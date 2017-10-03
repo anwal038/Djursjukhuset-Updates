@@ -2,8 +2,10 @@ package Inlamning1;
 
 import javax.swing.*;
 
-public class Katt extends Djur implements  printMe{
+
+public class Katt extends Djur {
     protected String foder;
+
 
     // Konstruktor
     public Katt(String namn, double vikt, String foder) {
@@ -16,6 +18,7 @@ public class Katt extends Djur implements  printMe{
         return getVikt() / 150;
     }
 
+
     // Getters & Setters
     public String getFoder() {
         return foder;
@@ -27,9 +30,11 @@ public class Katt extends Djur implements  printMe{
 
     @Override
     public void skriv() {
-        JOptionPane.showMessageDialog(null, String.format( getNamn() + " ska ha " +
-                 + mängdKattfoder() + " gram " + getFoder()));
+        JOptionPane.showMessageDialog(null, getNamn() + " ska ha " +
+                String.format("%.2f", mängdKattfoder()) + " gram " + getFoder());
     }
 
 
 }
+
+

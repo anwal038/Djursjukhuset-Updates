@@ -2,7 +2,7 @@ package Inlamning1;
 
 import javax.swing.*;
 
-public class Hund extends Djur implements printMe{
+public class Hund extends Djur  {
    // Instansvariabel
     protected String foder;
 
@@ -25,8 +25,6 @@ public class Hund extends Djur implements printMe{
     public void setFoder(String foder) {
         this.foder = foder;
     }
-
-
 
 
     @Override

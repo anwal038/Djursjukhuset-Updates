@@ -2,7 +2,7 @@ package Inlamning1;
 
 import javax.swing.*;
 
-public class Orm extends Djur implements printMe{
+public class Orm extends Djur {
     protected String foder;
 
     // Konstruktor

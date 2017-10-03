@@ -2,7 +2,7 @@ package Inlamning1;
 
 import javax.swing.*;
 
-public class Main implements printMe {
+public class Main  {
 
     public static void main(String[] args) {
         // Skapa objekt av djuren
@@ -12,26 +12,24 @@ public class Main implements printMe {
         Katt k2 = new Katt("Ove", 3000, "kattfoder");
         Orm o1 = new Orm("Hypno", 1000, "ormpellets");
 
-          String s = JOptionPane.showInputDialog("Vilket djur ska få mat?");
-          if (s.toLowerCase().equals("sixten")) {
-              h1.skriv();
-          } else if (s.toLowerCase().equals("dogge")) {
-              h2.skriv();
-          } else if (s.toLowerCase().equals("venus")) {
-              k1.skriv();
-          } else if (s.toLowerCase().equals("ove")) {
-              k2.skriv();
-          } else if (s.toLowerCase().equals("hypno")) {
-              o1.skriv();
-          } else
-              JOptionPane.showMessageDialog(null, "Angivet djur finns inte i registret");
-
+        String s = JOptionPane.showInputDialog("Vilket djur ska få mat?");
+        if (s.toLowerCase().equals("sixten")) {
+            h1.skriv();
+        } else if (s.toLowerCase().equals("dogge")) {
+            h2.skriv();
+        } else if (s.toLowerCase().equals("venus")) {
+            k1.skriv();
+        } else if (s.toLowerCase().equals("ove")) {
+            k2.skriv();
+        } else if (s.toLowerCase().equals("hypno")) {
+            o1.skriv();
+        } else {
+            JOptionPane.showMessageDialog(null, "Angivet djur finns inte i registret");
+        }
     }
 
-    @Override
-    public void skriv() {
 
-    }
+
 
 
 }
